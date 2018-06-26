@@ -12,7 +12,7 @@
             console.log(totalSumOfDonations);
         }
 
-
+    // dynamically set the title to the current total amount
     function setCurrentAmount (){
         var currentTotal = document.getElementById('current-total')
         currentTotal.innerText = '$' + totalSumOfDonations;
@@ -26,11 +26,6 @@
     var donationGoal = document.getElementById("donationgoal");
     var donationGoalData = donationGoal.dataset.valuemax;
     console.log(donationGoalData);
-
-    // get the data value from combined total
-    // var highestCurrentValue = document.getElementById("highest-amount")
-    // var highestCurrentValueData = highestCurrentValue.dataset.value;
-    // console.log(highestCurrentValueData);
 
     // work out how much the therm should rise
     function calcPercentage() {
