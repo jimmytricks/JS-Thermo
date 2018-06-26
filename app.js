@@ -9,7 +9,6 @@
         for (i = 0; i < totalNumOfDonations.length; i++){
             // debugger;
             totalSumOfDonations += Number(totalNumOfDonations[i].dataset.value);
-            console.log(totalSumOfDonations);
         }
 
     // dynamically set the title to the current total amount
@@ -25,7 +24,6 @@
     // get the data value from donation goal
     var donationGoal = document.getElementById("donationgoal");
     var donationGoalData = donationGoal.dataset.valuemax;
-    console.log(donationGoalData);
 
     // work out how much the therm should rise
     function calcPercentage() {
@@ -36,7 +34,6 @@
         // make string, add px
         var stringPixelAmount = roundedCalculatedPixelAmount.toString();
         stringPixelAmount += 'px';
-        console.log(stringPixelAmount);
         // set height of the thermo to combined amount
         document.getElementById("thermo").style.height = stringPixelAmount;
     }
