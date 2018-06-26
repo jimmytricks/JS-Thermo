@@ -21,14 +21,14 @@
     console.log(donationGoalData);
 
     // get the data value from combined total
-    var highestCurrentValue = document.getElementById("highest-amount")
-    var highestCurrentValueData = highestCurrentValue.dataset.value;
-    console.log(highestCurrentValueData);
+    // var highestCurrentValue = document.getElementById("highest-amount")
+    // var highestCurrentValueData = highestCurrentValue.dataset.value;
+    // console.log(highestCurrentValueData);
 
     // work out how much the therm should rise
-    function calcPercentage(donationGoalData, highestCurrentValueData) {
+    function calcPercentage() {
         // calc the pixel amount then times it by 500px (size of thermo)
-        calculatedPixelAmount = (highestCurrentValueData / donationGoalData) * 500;
+        calculatedPixelAmount = (totalSumOfDonations / donationGoalData) * 500;
         // round to integer
         var roundedCalculatedPixelAmount = Math.round(calculatedPixelAmount);         
         // make string, add px
@@ -39,7 +39,7 @@
         document.getElementById("thermo").style.height = stringPixelAmount;
     }
 
-    calcPercentage(donationGoalData, highestCurrentValueData);
+    calcPercentage();
 
 
 })();
