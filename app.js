@@ -4,10 +4,11 @@
     // work out total of donations
     var totalNumOfDonations = document.getElementsByClassName("donation");
         var i;
+        var totalSumOfDonations = 0;
         // loop through amount of donations, tally to total sum
         for (i = 0; i < totalNumOfDonations.length; i++){
-            var totalSumOfDonations = 0;
-            totalSumOfDonations =+ totalNumOfDonations[i].dataset.value;;
+            // debugger;
+            totalSumOfDonations += Number(totalNumOfDonations[i].dataset.value);
             console.log(totalSumOfDonations);
         }
 

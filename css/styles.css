@@ -41,6 +41,12 @@
   right: 35px;
 }
 
+.marker {
+  right: -150px !important;
+  border-bottom: 1px solid black;
+  width: 140px;
+}
+
 .bulb {
   background: #e5e5e5;
   border-radius: 100px;
