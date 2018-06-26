@@ -1,11 +1,11 @@
 .donation-meter {
-  margin-left: 30px;
+  margin-left: 150px;
   width: 100px;
   .glass {
     background: #e5e5e5;
     border-radius: 100px 100px 0 0;
     display: block;
-    height: 500px;
+    height: 1000px;
     margin: 0 35px 10px;
     padding: 5px;
     position: relative;
@@ -16,13 +16,13 @@
     border-radius: 100px;
     display: block;
     width: 20px;
-    height:50px;
+    height:0px;
     position: absolute;
      bottom: 5px;
      transition-property: height;
        transition-duration: 2s;
        transition-timing-function: linear;
-       transition-delay: 1s;
+       transition-delay: 2s;
   }
   .raiseThermo {
     height:90%;
@@ -30,6 +30,7 @@
   strong { display: block; text-align: center; }
   .goal {
     font-size: 30px;
+    margin-bottom:20px;
   }
   .total {
     font-size: 16px;
@@ -38,9 +39,23 @@
   }
 }
 .marker {
-  right:-150px !important;
   border-bottom:1px solid black;
   width:140px;
+}
+
+#current-total {
+  margin-bottom:40px;
+}
+
+.donation-meter .donation {
+  right:-250px !important;
+  width:250px;
+  border-bottom:1px solid black;
+  text-align:right;
+}
+
+.donation-amount {
+  font-weight:300;
 }
 
 .bulb {
@@ -65,7 +80,7 @@
     background: #f34e54;
     border-radius: 100px 100px 0 0;
     display: block;
-    height: 30px;
+    height: 20px;
     width: 20px;
     position: relative;
       top: -65px;

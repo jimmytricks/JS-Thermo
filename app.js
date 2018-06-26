@@ -12,6 +12,13 @@
             console.log(totalSumOfDonations);
         }
 
+
+    function setCurrentAmount (){
+        var currentTotal = document.getElementById('current-total')
+        currentTotal.innerText = '$' + totalSumOfDonations;
+    }
+    setCurrentAmount();
+
     // set variable ready for storing pixel height of combined total
     var calculatedPixelAmount;
 
@@ -28,7 +35,7 @@
     // work out how much the therm should rise
     function calcPercentage() {
         // calc the pixel amount then times it by 500px (size of thermo)
-        calculatedPixelAmount = (totalSumOfDonations / donationGoalData) * 500;
+        calculatedPixelAmount = (totalSumOfDonations / donationGoalData) * 1000;
         // round to integer
         var roundedCalculatedPixelAmount = Math.round(calculatedPixelAmount);         
         // make string, add px
