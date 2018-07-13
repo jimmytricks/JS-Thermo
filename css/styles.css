@@ -1,7 +1,9 @@
 .donation-meter {
   margin-left: 150px;
   width: 100px;
+  margin: 0 auto;
 }
+
 .donation-meter .glass {
   background: #e5e5e5;
   border-radius: 100px 100px 0 0;
@@ -11,7 +13,9 @@
   padding: 5px;
   position: relative;
   width: 20px;
+  box-sizing: initial !important;
 }
+
 .donation-meter .amount {
   background: #f34e54;
   border-radius: 100px;
@@ -21,21 +25,25 @@
   position: absolute;
   bottom: 5px;
   transition-property: height;
-  transition-duration: 2s;
+  transition-duration: 4s;
   transition-timing-function: linear;
-  transition-delay: 2s;
+  transition-delay: 0.1s;
 }
+
 .donation-meter .raiseThermo {
   height: 90%;
 }
+
 .donation-meter strong {
   display: block;
   text-align: center;
 }
+
 .donation-meter .goal {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
 .donation-meter .total {
   font-size: 16px;
   position: absolute;
@@ -44,7 +52,7 @@
 
 .marker {
   border-bottom: 1px solid black;
-  width: 140px;
+  width: 100px;
 }
 
 #current-total {
@@ -56,10 +64,16 @@
   width: 250px;
   border-bottom: 1px solid black;
   text-align: right;
+  color: white;
+  transition: 0.8s;
+}
+.donation-meter .donation:hover {
+  color: black;
 }
 
 .donation-amount {
   font-weight: 300;
+  color: black;
 }
 
 .bulb {
@@ -73,7 +87,9 @@
   top: -20px;
   right: 15px;
   width: 50px;
+  box-sizing: initial !important;
 }
+
 .bulb .red-circle {
   background: #f34e54;
   border-radius: 100px;
@@ -81,6 +97,7 @@
   height: 50px;
   width: 50px;
 }
+
 .bulb .filler {
   background: #f34e54;
   border-radius: 100px 100px 0 0;
