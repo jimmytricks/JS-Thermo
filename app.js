@@ -6,6 +6,7 @@
             var totalSumOfDonations = 0;
             // loop through amount of donations, tally to total sum
             for (i = 0; i < totalNumOfDonations.length; i++){
+                debugger;
                 // debugger;
                 totalSumOfDonations += Number(totalNumOfDonations[i].dataset.value);
             }
@@ -30,6 +31,7 @@
 
             // work out how much the therm should rise
             function calcPercentage() {
+                debugger;
                 // calc the pixel amount then times it by 500px (size of thermo)
                 calculatedPixelAmount = (totalSumOfDonations / donationGoalData) * 1000;
                 // round to integer
