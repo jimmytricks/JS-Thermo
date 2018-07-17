@@ -6,15 +6,13 @@
             var totalSumOfDonations = 0;
             // loop through amount of donations, tally to total sum
             for (i = 0; i < totalNumOfDonations.length; i++){
-                debugger;
-                // debugger;
                 totalSumOfDonations += Number(totalNumOfDonations[i].dataset.value);
             }
 
         // dynamically set the title to the current total amount
         function setCurrentAmount (){
             var currentTotal = document.getElementById('current-total')
-            currentTotal.innerText = '$' + totalSumOfDonations;
+            currentTotal.innerText = totalSumOfDonations.toLocaleString("en-US", {style: "currency", currency: "USD", currencyDisplay: "symbol", minimumFractionDigits: 0});
         }
         setCurrentAmount();
 
@@ -31,7 +29,6 @@
 
             // work out how much the therm should rise
             function calcPercentage() {
-                debugger;
                 // calc the pixel amount then times it by 500px (size of thermo)
                 calculatedPixelAmount = (totalSumOfDonations / donationGoalData) * 1000;
                 // round to integer

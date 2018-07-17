@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="app.js" defer></script>
 
-  </head>
-  <body>
-  
-    <div id="content">
-    
-      <div class="donation-meter">
-          <strong>Our Goal</strong>
-          <strong class="goal" id="donationgoal" data-valuemax="1000000">$1,000,000</strong>
-  
-          <strong>Current Total</strong>
-          <strong class="goal" id="current-total">$</strong>
-          
-          <span class="glass">
-            <strong class="total donation" style="bottom: 44%" data-value="6550">Bill Mounts <span class="donation-amount">($6,550)</span></strong>
-            <strong class="total donation" style="bottom: 42%" data-value="40000">John Budreski <span class="donation-amount">($40,000)</span></strong>
-            <strong class="total donation" style="bottom: 38%" data-value="40000">Greg Chu <span class="donation-amount">($40,000)</span></strong>
-            <strong class="total donation" style="bottom: 34%" data-value="200000">Tookie Angus <span class="donation-amount">($200,000)</span></strong>
-            <strong class="total donation" style="bottom: 14%" data-value="40000">Charles Weakly <span class="donation-amount">($40,000)</span></strong>
-            <strong class="total donation" style="bottom: 10%" data-value="100000">Albert Matter <span class="donation-amount">($100,000)</span></strong>
-            <strong class="total marker" style="bottom: 10%">$100,000</strong>
-            <strong class="total marker" style="bottom: 20%">$200,000</strong>
-            <strong class="total marker" style="bottom: 30%">$300,000</strong>
-            <strong class="total marker" style="bottom: 40%">$400,000</strong>
-            <strong class="total marker" style="bottom: 50%">$500,000</strong>
-            <strong class="total marker" style="bottom: 60%">$600,000</strong>
-            <strong class="total marker" style="bottom: 70%">$700,000</strong>
-            <strong class="total marker" style="bottom: 80%">$800,000</strong>
-            <strong class="total marker" style="bottom: 90%">$900,000</strong>
-            <span class="amount" id="thermo"></span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+  <main id="content">
+
+    <section class="donation-meter">
+      <strong>Our Goal</strong>
+      <strong class="goal" id="donationgoal" data-valuemax="1000000">$1,000,000</strong>
+
+      <strong>Current Total</strong>
+      <strong class="goal" id="current-total">$</strong>
+
+      <span class="glass">
+        <strong class="total donation" style="bottom: 44%" data-value="6550">Bill Mounts
+          <span class="donation-amount">($6,550)</span>
+        </strong>
+        <strong class="total donation" style="bottom: 42%" data-value="40000">John Budreski
+          <span class="donation-amount">($40,000)</span>
+        </strong>
+        <strong class="total donation" style="bottom: 38%" data-value="40000">Greg Chu
+          <span class="donation-amount">($40,000)</span>
+        </strong>
+        <strong class="total donation" style="bottom: 34%" data-value="200000">Tookie Angus
+          <span class="donation-amount">($200,000)</span>
+        </strong>
+        <strong class="total donation" style="bottom: 14%" data-value="40000">Charles Weakly
+          <span class="donation-amount">($40,000)</span>
+        </strong>
+        <strong class="total donation" style="bottom: 10%" data-value="100000">Albert Matter
+          <span class="donation-amount">($100,000)</span>
+        </strong>
+        <strong class="total marker" style="bottom: 10%">$100,000</strong>
+        <strong class="total marker" style="bottom: 20%">$200,000</strong>
+        <strong class="total marker" style="bottom: 30%">$300,000</strong>
+        <strong class="total marker" style="bottom: 40%">$400,000</strong>
+        <strong class="total marker" style="bottom: 50%">$500,000</strong>
+        <strong class="total marker" style="bottom: 60%">$600,000</strong>
+        <strong class="total marker" style="bottom: 70%">$700,000</strong>
+        <strong class="total marker" style="bottom: 80%">$800,000</strong>
+        <strong class="total marker" style="bottom: 90%">$900,000</strong>
+        <span class="amount" id="thermo"></span>
+      </span>
+      <div class="bulb">
+        <span class="red-circle"></span>
+        <span class="filler">
+          <span></span>
         </span>
-          <div class="bulb">
-              <span class="red-circle"></span>
-              <span class="filler">
-                  <span></span>
-              </span>
-          </div>
-        </div>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
